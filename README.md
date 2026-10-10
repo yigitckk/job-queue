@@ -8,6 +8,8 @@ Every production system I had seen treated Redis as "the thing that makes queues
 
 ## How it works
 
+![queue architecture](assets/queue-arch.png)
+
 ```
 Producer ──POST /jobs──▶ jobs table (status: PENDING)
                               │
